@@ -1386,8 +1386,9 @@ button[type=submit] {
 }
 
 header {
+  padding: 150px 0px 50px;
   width: 100%;
-  background: linear-gradient(90deg, #7D1927, #7D1927, #EC81AC);
+  background: linear-gradient(90deg, #1E7ABC, #EC81AC);
   position: relative;
   z-index: 9;
 }
@@ -1395,8 +1396,7 @@ header .container-fluid {
   padding: 0px !important;
 }
 header .contain {
-  padding: 100px 0px 50px;
-  width: 70%;
+  width: 100%;
   height: 100%;
   -webkit-margin-start: auto;
           margin-inline-start: auto;
@@ -1420,23 +1420,16 @@ header .contain p {
 }
 header .image-content {
   width: 100%;
-  height: 700px;
+  height: 500px;
+  border-radius: 50px;
   position: relative;
+  overflow: hidden;
 }
 header .image-content img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-header .image-content::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 100%;
-  background-color: #7D1927;
-  top: 0;
-  right: 0;
 }
 
 .about-us::after {

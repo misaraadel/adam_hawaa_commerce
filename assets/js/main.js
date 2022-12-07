@@ -66,43 +66,43 @@ $(document).ready(function () {
     },
   });
 
-  $('.add-to-cart').on('click', function () {
-    var cart = $('.cart-icon');
-    var imgtodrag = $(this).closest('.product-box').find("img").first();
-    if (imgtodrag) {
-    var imgclone = imgtodrag.clone()
-      .offset({
-      top: imgtodrag.offset().top ,
-      left: imgtodrag.offset().left
-    })
-      .css({
-      'opacity': '0.8',
-      'position': 'absolute',
-      'height': '150px',
-      'width': '150px',
-      'border-radius': '50%',
-      'z-index': '9999'
-    })
-    .appendTo($('body'))
-      .animate({
-      'top': cart.offset().top + 10,
-      'left': cart.offset().left + 10,
-      'width': 75,
-      'height': 75
-    }, 1000, 'easeInOutExpo');
+  // $('.add-to-cart').on('click', function () {
+  //   var cart = $('.cart-icon');
+  //   var imgtodrag = $(this).closest('.product-box').find("img").first();
+  //   if (imgtodrag) {
+  //   var imgclone = imgtodrag.clone()
+  //     .offset({
+  //     top: imgtodrag.offset().top ,
+  //     left: imgtodrag.offset().left
+  //   })
+  //     .css({
+  //     'opacity': '0.8',
+  //     'position': 'absolute',
+  //     'height': '150px',
+  //     'width': '150px',
+  //     'border-radius': '50%',
+  //     'z-index': '9999'
+  //   })
+  //   .appendTo($('body'))
+  //     .animate({
+  //     'top': cart.offset().top + 10,
+  //     'left': cart.offset().left + 10,
+  //     'width': 75,
+  //     'height': 75
+  //   }, 1000, 'easeInOutExpo');
     
-    setTimeout(function () {
-      cart.effect("bounce", {
-        times: 1
-      }, 200);
-    }, 1500);
+  //   setTimeout(function () {
+  //     cart.effect("bounce", {
+  //       times: 1
+  //     }, 200);
+  //   }, 1500);
 
-    imgclone.animate({
-      'width': 0,
-      'height': 0
-    }, function () {
-      $(this).detach()
-    });
-    }
-  });
+  //   imgclone.animate({
+  //     'width': 0,
+  //     'height': 0
+  //   }, function () {
+  //     $(this).detach()
+  //   });
+  //   }
+  // });
 });
