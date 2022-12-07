@@ -1623,6 +1623,9 @@ header .image-content img {
   -webkit-animation: tada 0.3s linear;
           animation: tada 0.3s linear;
 }
+.features .swiper-wrapper {
+  padding: 20px 0px 50px 0px;
+}
 
 footer {
   width: 100%;
@@ -1842,5 +1845,38 @@ footer .content .copyrigts .socail li a:hover img {
   }
   footer .copyrigts p {
     margin-bottom: 24px !important;
+  }
+  .product-box .image-content {
+    height: 150px;
+  }
+  .product-box .product-title {
+    font-size: 13px !important;
+    margin: 10px 0px !important;
+  }
+  .product-box .flex-price {
+    margin-bottom: 10px !important;
+  }
+  .product-box .flex-price p {
+    font-size: 15px !important;
+  }
+  .product-box .flex-price p span {
+    font-size: 13px !important;
+  }
+  .product-box .custom-btn-cart span {
+    font-size: 14px !important;
+  }
+  .product-box .type {
+    padding: 4px 10px !important;
+    font-size: 14px !important;
+  }
+  .features .box {
+    padding: 20px 7px !important;
+  }
+  .features .box img {
+    width: 40px;
+    height: 40px;
+  }
+  .features .box h2 {
+    font-size: 14px !important;
   }
 }/*# sourceMappingURL=style.css.map */
